@@ -1,6 +1,6 @@
 var express = require("express");
 var app = express();
-
+var path = require('path');
 // Create the router object
 var router = express.Router();
 
@@ -13,6 +13,8 @@ app.use("/",router);
 router.use(function(req,res,next){
   next();
 });
+
+app.use(express.static(path.join(__dirname, './public')));
 
 // Provide all the routes
 

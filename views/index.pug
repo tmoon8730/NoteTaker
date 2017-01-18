@@ -1,4 +1,10 @@
 include layout.pug
 
+block scripts
+  script(src='/javascript/mymda.js')
+
+
 block content
   h1 This is the index page
+  script
+    - var test_response = check_test();
