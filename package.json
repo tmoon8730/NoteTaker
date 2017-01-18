@@ -1,0 +1,10 @@
+{
+  "name": "expressRouter",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node Server.js"
+  },
+  "dependencies": {
+    "express": "^4.12.3"
+  }
+}
